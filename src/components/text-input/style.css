@@ -1,0 +1,24 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input label {
+  margin-bottom: 3px;
+}
+
+.input input {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-style: solid;
+}
+
+.input .error {
+  color: red;
+  font-size: 12px;
+}
+
+.input.has-error input {
+  border-color: red;
+}

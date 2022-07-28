@@ -1,0 +1,76 @@
+{
+    "name": "frontned-engineer-interview",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@apollo/client": "^3.5.10",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^12.0.0",
+        "@testing-library/user-event": "^13.2.1",
+        "@types/express-session": "^1.17.4",
+        "@types/jest": "^27.0.1",
+        "@types/node": "^16.7.13",
+        "@types/passport": "^1.0.7",
+        "@types/passport-local": "^1.0.34",
+        "@types/react": "^17.0.20",
+        "@types/react-dom": "^17.0.9",
+        "@vscode/sqlite3": "^5.0.8",
+        "apollo-server-core": "^3.6.7",
+        "apollo-server-express": "^3.6.7",
+        "apollo-server-plugin-response-cache": "^3.6.0",
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.3",
+        "express-session": "^1.17.2",
+        "graphql": "^16.3.0",
+        "knex": "^1.0.5",
+        "lodash": "^4.17.21",
+        "node-fetch": "2",
+        "nodemon": "^2.0.15",
+        "objection": "^3.0.1",
+        "passport": "^0.5.2",
+        "passport-local": "^1.0.0",
+        "react": "^18.0.0",
+        "react-data-table-component": "^7.4.7",
+        "react-dom": "^18.0.0",
+        "react-markdown": "^8.0.2",
+        "react-router-dom": "^6.3.0",
+        "react-scripts": "5.0.0",
+        "sqlite3": "^5.0.2",
+        "styled-components": "^5.3.5",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.4.2",
+        "web-vitals": "^2.1.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "server": "ts-node src/server/index.ts",
+        "server:watch": "nodemon --watch 'src/server/**' --ext 'ts' --exec 'ts-node src/server/index.ts'"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.181",
+        "@types/node-fetch": "^2.6.1"
+    },
+    "packageManager": "yarn@3.2.1"
+}

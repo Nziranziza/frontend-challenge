@@ -25,14 +25,18 @@ export interface WithUserProps {
   user: User | null
 }
 
-const PrivateRouteWrapper = ({ isLoggedIn }: any) => {
+export type RouteWrapperProps = {
+  isLoggedIn: boolean
+}
+
+const PrivateRouteWrapper = ({ isLoggedIn }: RouteWrapperProps) => {
   if (isLoggedIn) {
     return <Outlet />
   }
   return <Navigate to="/login" replace />
 }
 
-const AuthRouteWrapper = ({ isLoggedIn }: any) => {
+const AuthRouteWrapper = ({ isLoggedIn }: RouteWrapperProps) => {
   if (!isLoggedIn) {
     return <Outlet />
   }
